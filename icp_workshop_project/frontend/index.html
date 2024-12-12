@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Professional Journal</title>
+
+<link rel="stylesheet" href="css/reset.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/themes.css">
+
+<link rel="icon" href="assets/icons/favicon.ico">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<h1 class="title">Blockchain Day Journal</h1>
+
+<nav class="nav">
+
+<a href="#entry-form" class="nav-link">Add Entry</a>
+
+<a href="#entries-list" class="nav-link">View Entries</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<main class="main">
+
+<section id="entry-form" class="section">
+
+<h2>Add New Entry</h2>
+
+<form id="journalForm" class="form">
+
+<input type="text" id="user" class="input" placeholder="User Name" required>
+
+<input type="date" id="date" class="input" required>
+
+<input type="text" id="mood" class="input" placeholder="Mood" required>
+
+<input type="text" id="favoriteSong" class="input" placeholder="Favorite Song" required>
+
+<textarea id="goals" class="textarea" placeholder="Goals (comma separated)" required></textarea>
+
+<textarea id="moviesWatched" class="textarea" placeholder="Movies Watched (comma separated)" required></textarea>
+
+<textarea id="booksRead" class="textarea" placeholder="Books Read (comma separated)" required></textarea>
+
+<textarea id="lessonsLearned" class="textarea" placeholder="Lessons Learned (comma separated)" required></textarea>
+
+<textarea id="additionalNotes" class="textarea" placeholder="Additional Notes"></textarea>
+
+<button type="submit" class="button">Add Entry</button>
+
+</form>
+
+</section>
+
+<section id="entries-list" class="section">
+
+<h2>Journal Entries</h2>
+
+<div id="entries" class="entries"></div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+<p>&copy; 2024 Blockchain Journal - All rights reserved.</p>
+
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

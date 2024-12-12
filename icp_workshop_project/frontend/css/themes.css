@@ -1,0 +1,97 @@
+/* Temel Değişkenler */
+:root {
+    --color-primary: #6c63ff;
+    --color-secondary: #f4f4f9;
+    --color-accent: #ff6584;
+    --color-dark: #333;
+    --color-light: #fff;
+    --color-gray: #ddd;
+    --font-main: 'Roboto', Arial, sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+}
+
+/* Genel Stil */
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Başlıklar */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+}
+
+/* Linkler */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+/* Butonlar */
+.button {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: var(--color-accent);
+    transform: scale(1.05);
+}
+
+/* Form Elemanları */
+.input, .textarea {
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input:focus, .textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+/* Temalar */
+.theme-dark {
+    --color-primary: #1f2937;
+    --color-secondary: #111827;
+    --color-accent: #3b82f6;
+    --color-dark: #e5e7eb;
+    --color-light: #1f2937;
+    --color-gray: #6b7280;
+}
+
+.theme-light {
+    --color-primary: #6c63ff;
+    --color-secondary: #f4f4f9;
+    --color-accent: #ff6584;
+    --color-dark: #333;
+    --color-light: #fff;
+    --color-gray: #ddd;
+}
+
+/* Geçişler ve Temalar Arası Geçiş */
+[data-theme="dark"] {
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+}
+
+[data-theme="light"] {
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+}

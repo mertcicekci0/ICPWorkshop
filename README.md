@@ -1,4 +1,4 @@
-### Blockchain Day Journal
+### Blockchain Day Journal  ( Winner of the risein-icp hackathon project ) - ( Winner of the Patika.dev-icp hackathon project )
 
 **Blockchain Day Journal** is a project that allows users to store their journals securely and immutably on the **blockchain**. Users can save their daily notes, feelings, favorite songs, movies they've watched, books they've read, and more. At the end of the year, all journal entries are unlocked, enabling users to view all their past notes.
 

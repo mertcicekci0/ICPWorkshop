@@ -1,4 +1,4 @@
-const BACKEND_URL = "";
+const BACKEND_URL = "";  
 
 export async function addEntry(user, entry) {
     const response = await fetch(`${BACKEND_URL}/addEntry`, {

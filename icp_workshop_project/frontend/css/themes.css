@@ -1,4 +1,4 @@
-/* Temel Değişkenler */
+
 :root {
     --color-primary: #6c63ff;
     --color-secondary: #f4f4f9;
@@ -10,7 +10,6 @@
     --font-heading: 'Poppins', sans-serif;
 }
 
-/* Genel Stil */
 body {
     font-family: var(--font-main);
     background-color: var(--color-secondary);
@@ -18,13 +17,11 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Başlıklar */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     color: var(--color-primary);
 }
 
-/* Linkler */
 a {
     color: var(--color-primary);
     text-decoration: none;
@@ -35,7 +32,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Butonlar */
 .button {
     background-color: var(--color-primary);
     color: var(--color-light);
@@ -52,7 +48,6 @@ a:hover {
     transform: scale(1.05);
 }
 
-/* Form Elemanları */
 .input, .textarea {
     border: 1px solid var(--color-gray);
     border-radius: 5px;
@@ -66,7 +61,6 @@ a:hover {
     box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
 }
 
-/* Temalar */
 .theme-dark {
     --color-primary: #1f2937;
     --color-secondary: #111827;
@@ -85,7 +79,6 @@ a:hover {
     --color-gray: #ddd;
 }
 
-/* Geçişler ve Temalar Arası Geçiş */
 [data-theme="dark"] {
     background-color: var(--color-secondary);
     color: var(--color-dark);

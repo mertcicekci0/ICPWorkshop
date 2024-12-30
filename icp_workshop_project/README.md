@@ -1,40 +1,38 @@
+### Blockchain Day Journal
 
-
-# Blockchain Day Journal (Blok Zinciri Günlüğü)
-
-**Blockchain Day Journal** (Blok Zinciri Günlüğü), kullanıcıların günlüklerini güvenli ve değiştirilemez bir şekilde **blockchain** üzerinde tutmalarını sağlayan bir projedir. Kullanıcılar, her gün için notlarını, hissettiklerini, favori şarkılarını, izledikleri filmleri, okudukları kitapları ve daha fazlasını blockchain üzerinde kaydederler. Yıl sonunda, tüm günlük verilerinin kilidi açılır ve kullanıcılar geçmişteki tüm notlarını görebilirler.
+**Blockchain Day Journal** is a project that allows users to store their journals securely and immutably on the **blockchain**. Users can save their daily notes, feelings, favorite songs, movies they've watched, books they've read, and more. At the end of the year, all journal entries are unlocked, enabling users to view all their past notes.
 
 ---
 
-## **Proje Hedefi**
+## **Project Goals**
 
-Bu proje, dijital günlüğünüzü **blockchain** teknolojisini kullanarak kaydetmenizi sağlar. Amacı, günlük verilerinin güvenli bir şekilde saklanmasını sağlamak, kullanıcıların gelişimlerini izlemelerine olanak tanımak ve verilerin yalnızca kullanıcıların belirlediği zaman diliminde erişilebilir olmasını sağlamaktır.
+This project enables users to keep their digital journals using **blockchain** technology. The primary objectives are to ensure the secure storage of journal data, allow users to track their personal growth, and make the data accessible only during user-defined periods.
 
 ---
 
-## **Özellikler**
+## **Features**
 
-1. **Günlük Yazma**
-   - Kullanıcılar, her gün için yazdıkları metinlerde tarih, duygular, favori şarkı, hedefler, izledikleri filmler, okudukları kitaplar ve öğrenilen dersler gibi bilgileri girerler.
+1. **Journal Writing**
+   - Users can input text for each day, including details like date, emotions, favorite songs, goals, movies watched, books read, and lessons learned.
    
-2. **Veri Saklama**
-   - Kullanıcıların günlükleri **blockchain** üzerinde saklanır. Bu sayede veriler güvenli bir şekilde depolanır ve değiştirilemez olur.
+2. **Data Storage**
+   - Journal entries are stored on the **blockchain**, ensuring secure, tamper-proof data storage.
 
-3. **Kilitleme Sistemi**
-   - Her günün verisi başlangıçta kilitli olacak şekilde saklanır. Kullanıcılar, o günün verilerini yazabilirler, ancak yalnızca yılbaşı günü (31 Aralık), tüm geçmiş verilerinin kilidi açılacaktır.
+3. **Locking System**
+   - Each day’s data is stored in a locked state initially. Users can add entries for the day, but all data becomes accessible only on New Year's Day (December 31).
 
-4. **NFT ve Blockchain**
-   - Her günlük kaydı bir **NFT** olarak saklanır. Kullanıcılar günlüklerini görselleştirebilir ve paylaşabilirler.
+4. **NFT Integration**
+   - Every journal entry is stored as an **NFT**, enabling users to visualize and share their journals.
 
-5. **Yılbaşı Günü Kilit Açma**
-   - Yılbaşı günü (31 Aralık), tüm kilitler açılır ve kullanıcılar bir yıl boyunca yazdıkları tüm günlükleri görebilirler.
+5. **Year-End Unlock**
+   - On December 31, all entries are unlocked, and users can access the entire year’s journal.
 
-6. **Bildirim ve Hatırlatma Sistemi**
-   - Kullanıcılar her gün yazmayı unutmasınlar diye bildirimler alacaklardır.
+6. **Notification System**
+   - Users receive reminders to ensure they don’t forget to write their daily entries.
 
 ---
 
-## **Teknolojiler**
+## **Technologies**
 
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Motoko (DFINITY Canister)
@@ -42,88 +40,82 @@ Bu proje, dijital günlüğünüzü **blockchain** teknolojisini kullanarak kayd
 
 ---
 
-## **Proje Yapısı**
+## **Project Structure**
 
-Proje aşağıdaki dosya yapısına sahiptir:
+The project follows this directory structure:
 
 ```
 project-folder/
 ├── assets/
-│   ├── images/ (UI resimleri)
-│   ├── icons/ (ikonlar için)
+│   ├── images/ (UI images)
+│   ├── icons/ (icons)
 ├── css/
 │   ├── reset.css (CSS reset)
-│   ├── style.css (temel stil dosyası)
-│   ├── themes.css (temalar için stil)
+│   ├── style.css (main stylesheet)
+│   ├── themes.css (theme-specific styles)
 ├── js/
 │   ├── api/
-│   │   └── backend.js (backend entegrasyonu)
+│   │   └── backend.js (backend integration)
 │   ├── ui/
-│   │   └── components.js (UI bileşenleri)
-│   └── main.js (ana script)
-├── index.html (HTML ana dosyası)
+│   │   └── components.js (UI components)
+│   └── main.js (main script)
+├── index.html (main HTML file)
 └── motoko/
-    └── blockchain_day_journal.mo (Motoko backend kodu)
+    └── blockchain_day_journal.mo (Motoko backend code)
 ```
 
 ---
 
-## **Kurulum ve Çalıştırma**
+## **Setup and Deployment**
 
-### 1. **Frontend (HTML, CSS, JavaScript) Kurulumu:**
+### 1. **Frontend (HTML, CSS, JavaScript) Setup:**
 
-1. Bu projeyi bilgisayarınıza indirin.
-2. `index.html` dosyasını tarayıcınızda açın. Frontend kısmı HTML, CSS ve JavaScript kullanılarak geliştirilmiştir.
+1. Download the project to your local machine.
+2. Open the `index.html` file in your browser to view the frontend. It uses HTML, CSS, and JavaScript.
 
-### 2. **Backend (Motoko) Kurulumu:**
+### 2. **Backend (Motoko) Setup:**
 
-Backend, DFINITY üzerinde çalışan Motoko kodları ile yazılmıştır. DFINITY canister'ınızı dağıtmak için aşağıdaki adımları takip edebilirsiniz:
+The backend is implemented using Motoko and runs on the DFINITY platform. Follow these steps to deploy the canister:
 
-#### 2.1 DFINITY SDK Kurulumu
+#### 2.1 Install DFINITY SDK
 
-1. [DFINITY SDK](https://sdk.dfinity.org/docs/index.html) adresinden SDK’yı indirip kurun.
-2. `dfx` komutunu kullanarak DFINITY ağında canister’ınızı dağıtmak için şu komutları izleyin:
+1. Download and install the SDK from the [DFINITY SDK Documentation](https://sdk.dfinity.org/docs/index.html).
+2. Use the following commands to deploy your canister to the DFINITY network:
    ```bash
    dfx new blockchain-day-journal
    cd blockchain-day-journal
    dfx deploy
    ```
 
-#### 2.2 Backend Dağıtımı
+#### 2.2 Backend Deployment
 
-- **Motoko kodu**, `motoko/blockchain_day_journal.mo` dosyasındaki aktör fonksiyonları ile günlük verilerini saklar.
-- **Canister’ı Dağıtmak** için terminalde `dfx deploy` komutunu kullanarak backend’i DFINITY ağına yükleyin.
-- **API Bağlantıları** için frontend'deki `backend.js` dosyasındaki `BACKEND_URL` kısmını, dağıttığınız canister’ın URL’si ile güncelleyin.
-
----
-
-## **Kullanım**
-
-### 1. **Yeni Günlük Girişi Eklemek:**
-
-- Uygulamayı açın.
-- Kullanıcı adı girin.
-- Tarih, duygular, favori şarkı, hedefler, izlediğiniz filmler, okuduğunuz kitaplar ve öğrendiğiniz dersler gibi bilgileri girin.
-- "Add Entry" butonuna tıklayarak günlük kaydınızı blockchain üzerinde saklayın.
-
-### 2. **Geçmiş Günlüklerini Görüntülemek:**
-
-- Yılbaşı günü (31 Aralık), tüm günlüklerin kilidi açılır ve geçmiş tüm verilerinizi görüntüleyebilirsiniz.
+- **Motoko Code**: The backend logic is written in the `motoko/blockchain_day_journal.mo` file, handling journal data storage through actor functions.
+- **Canister Deployment**: Run `dfx deploy` in the terminal to deploy the backend to the DFINITY network.
+- **API Integration**: Update the `BACKEND_URL` in the `backend.js` file in the frontend with the URL of the deployed canister.
 
 ---
 
-## **Backend API’leri**
+## **Usage**
 
-Proje, Motoko backend kullanarak aşağıdaki API'lere sahiptir:
+### 1. **Add a New Journal Entry**
 
-- `POST /addEntry`: Yeni bir günlük ekler.
-- `GET /getEntries`: Kullanıcının tüm günlüklerini alır.
-- `GET /getEntryByDate`: Belirli bir tarihe ait günlüğü alır.
-- `PUT /updateEntry`: Belirli bir tarihe ait günlüğü günceller.
-- `DELETE /deleteEntry`: Belirli bir günlüğü siler.
+- Open the application.
+- Enter your username.
+- Input details such as the date, emotions, favorite songs, goals, movies, books, and lessons learned.
+- Click the "Add Entry" button to store your journal entry on the blockchain.
+
+### 2. **View Past Journals**
+
+- On December 31, all journal entries will be unlocked, allowing users to view their past entries for the entire year.
 
 ---
 
+## **Backend APIs**
 
+The backend uses Motoko to provide the following APIs:
 
-
+- `POST /addEntry`: Adds a new journal entry.
+- `GET /getEntries`: Retrieves all journal entries for a user.
+- `GET /getEntryByDate`: Retrieves the journal entry for a specific date.
+- `PUT /updateEntry`: Updates a specific journal entry.
+- `DELETE /deleteEntry`: Deletes a specific journal entry. 
